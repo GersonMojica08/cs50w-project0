@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*index*/
+body {
+  background: url(https://decine21.com/images/Repotajes/getsemani.jpg);
+  background-size: cover;
+  /*esto me mantiene la img quieta, sin moverse a la hora de desplazar la info*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+/*hace que el navbar quede quieto*/
+.navbar {
+  /*selector 3*/
+  overflow: hidden;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  body {
+    background: #881313;
+  }
+  .ayuda {
+    background: #881313;
+  }
+}
+
+/*imagen de html index*/
+#cruz {
+  height: 40vh;
+  width: 50vh;
+  vertical-align: middle;
+}
+
+/*imagen de html cielo*/
+#cielo {
+  height: 40vh;
+  width: 50vh;
+  vertical-align: middle;
+}
+
+/*imagen de html infierno*/
+#infierno {
+  height: 40vh;
+  width: 50vh;
+  vertical-align: middle;
+}
+
+/*libro biblia*/
+#pho {
+  /*selector 2*/
+  height: 45vh;
+  width: 60vh;
+  vertical-align: middle;
+}
+
+/*unica solucion que encontre*/
+#i {
+  overflow: hidden;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  /*aca tengo que modificarlo*/
+  height: 60%;
+  /*aca travesie lol*/
+  background: rgba(48, 38, 38, 0.4);
+  padding: 10vh;
+  margin-top: 10vh;
+}
+
+/*herencia*/
+p {
+  /*selector 4*/
+  font-family: italic;
+  color: white;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.letra-1 {
+  font-family: italic;
+  color: white;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+p::-moz-selection {
+  /*selector 6*/
+  color: #028073;
+}
+
+p::selection {
+  /*selector 6*/
+  color: #028073;
+}
+
+li::-moz-selection {
+  color: white;
+}
+
+li::selection {
+  color: white;
+}
+
+.l {
+  font-family: bold;
+  color: #7bda0f;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+/*para los link de video*/
+.l2 {
+  font-family: bold;
+  color: #0f2dda;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+/*libros de la biblia, tabla*/
+tr:nth-child(even) {
+  background-color: #a93f3f;
+}
+
+tr:hover td {
+  background-color: #369681;
+}
+
+td {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  /*selector 1*/
+  color: rgba(167, 185, 225, 0.679);
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*titulo de encabezado de las pag*/
+/*anidamiento*/
+.l-3 {
+  color: rgba(167, 185, 225, 0.679);
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*barra que aparece en el html cielo*/
+.success {
+  background-color: #fff9f9;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #7581b8;
+  padding: 1%;
+  margin-top: 8%;
+}
+
+/*animacion del cuadro rojo al señalar una opcion*/
+a {
+  color: #881313;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 2%;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  /*selector 5*/
+  background: rgba(8, 138, 99, 0.666);
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

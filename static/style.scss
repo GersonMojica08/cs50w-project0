@@ -1,0 +1,168 @@
+$color: rgb(255, 255, 255);
+$color3:rgb(136, 19, 19);
+$color2:rgba(8, 138, 99, 0.666);
+/*index*/
+ 
+body{
+  background:url(https://decine21.com/images/Repotajes/getsemani.jpg);
+  background-size: cover;
+  /*esto me mantiene la img quieta, sin moverse a la hora de desplazar la info*/
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  background-attachment:fixed;
+}
+/*hace que el navbar quede quieto*/
+
+.navbar {             /*selector 3*/
+  overflow: hidden;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  width: 100%;
+  
+}
+
+@media (max-width: 500px) {
+  body {
+    background: $color3;
+  }
+  .ayuda{
+    background: rgb(136, 19, 19);
+  }
+}
+/*imagen de html index*/
+#cruz {
+  height: 40vh;
+  width: 50vh;
+  vertical-align: middle;
+}
+/*imagen de html cielo*/
+#cielo{
+  height: 40vh;
+  width: 50vh;
+  vertical-align: middle;
+}
+/*imagen de html infierno*/
+#infierno{
+  height: 40vh;
+  width: 50vh;
+  vertical-align: middle;
+}
+/*libro biblia*/
+
+#pho{              /*selector 2*/
+  height: 45vh;
+  width: 60vh;
+  vertical-align: middle;
+}
+/*unica solucion que encontre*/
+#i{
+  overflow: hidden;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  width: 100%;
+}
+.container{
+  width: 80%; /*aca tengo que modificarlo*/
+  height: 60%; /*aca travesie lol*/
+  background:rgba(48, 38, 38, 0.4);
+  padding: 10vh;
+  margin-top: 10vh;
+}
+/*herencia*/
+p {                 /*selector 4*/
+  font-family: italic;
+  color: white;
+  font-size:1.1em; 
+  text-align: justify;
+}
+%texto { 
+  font-family: italic;
+  color: white;
+  font-size:1.1em; 
+  text-align: justify;
+}
+p::selection{       /*selector 6*/
+  color: rgb(2, 128, 115);
+}
+li::selection{
+  color:white;
+}
+
+.letra-1{
+  @extend %texto;
+}
+
+.l{
+  font-family: bold;
+  color: rgb(123, 218, 15);
+  font-size:1.1em; 
+  text-align: justify;
+}
+/*para los link de video*/
+.l2{
+  font-family: bold;
+  color: rgb(15, 45, 218);
+  font-size:1.1em; 
+  text-align: justify;
+}
+
+/*libros de la biblia, tabla*/
+tr:nth-child(even){
+  background-color: rgb(169, 63, 63);
+}
+tr:hover td{
+  background-color: #369681;
+}
+td{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {          /*selector 1*/
+  color: rgba(167, 185, 225, 0.679);
+  font: {
+     family: verdana;
+     weight: bold;
+     size: 1.5em;
+  }
+}
+/*titulo de encabezado de las pag*/
+/*anidamiento*/
+.l-3 {
+  color: rgba(167, 185, 225, 0.679);
+  font: {  
+     family: verdana;
+     weight: bold;
+     size: 1.5em;
+  }
+}
+
+/*barra que aparece en el html cielo*/
+.success {
+  background-color: #fff9f9;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid rgb(117, 129, 184);
+  padding: 1%;
+  margin-top: 8%;
+}
+/*animacion del cuadro rojo al señalar una opcion*/
+a {
+  color: $color3;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 2%;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+}
+a:hover {   /*selector 5*/
+  background: $color2;
+  text-decoration: none;
+}
+
